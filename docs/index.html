@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Space Checkers</title>
+
+    <meta name="description" content="Videojuego multijugador de Damas Chinas, creado para la Experiencia Educativa de Tecnologías para la Construcción de Software">
+    <meta name="author" content="Manolomon">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/space.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="css/highlight/styles/space.css" id="highlight-theme">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!-- INCLUDE CSS HERE -->
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides"><section id="inicio" class="slide" data-has-notes="false">
+<section data-background="images/Background.jpg">
+
+  <h2>Space Checkers</h2>
+
+  <img src="images/main-title.gif" alt="Main titles">
+
+  <p>Videojuego multijugador de Damas Chinas Espaciales con Unity 🌌</p>
+
+</section>
+</section>
+
+<section id="resumen" class="slide" data-has-notes="false">
+<section data-background="images/Background.jpg">
+
+  <h2>Resumen</h2>
+
+  <small>☄️ Space Checkers es la adaptación del clásico juego de Damas Chinas con temática de batalla espacial</small>
+
+  <img src="images/side.gif" alt="Choose Your Side">
+
+  <small>👾 El objetivo principal es tomar control de un equipo alienígena y <i>conquistar</i> el lado del enemigo moviendo las piezas estratégicamente hasta ocupar todos sus lugares</small>
+
+</section>
+</section>
+
+<section id="chapter-documentacion" class="chapter">
+<section id="documentacion-documentacion" class="slide" data-has-notes="false">
+<h3>Requerimientos</h3><ul>
+<li>La aplicación deberá poder invitar a otros usuarios registrados a una partida, ya sea por correo electrónico o link de invitación</li>
+<li>La aplicación deberá poder registrar nuevos usuarios</li>
+<li>La aplicación deberá poder ingresar a la aplicación si es que tiene una cuenta registrada</li>
+<li>La aplicación deberá tener un chat dentro de la partida para la comunicación entre los jugadores</li>
+</ul>
+</section>
+
+<section id="documentacion-requerimientos" class="slide" data-has-notes="false">
+<h3>Requerimientos</h3><ul>
+<li>La aplicación deberá permitir jugar entre varios jugadores (máximo 6) una partida de damas chinas</li>
+<li>La aplicación deberá permitir a los jugadores en la partida mover sus piezas respectivas con base a los movimientos permitidos</li>
+<li>La aplicación deberá mostrar al jugador en turno los movimientos posibles que puede hacer con una determinada pieza (si es que tiene la opción activada)</li>
+</ul>
+</section>
+</section>
+
+<section id="thirdparty" class="slide" data-has-notes="false">
+<section data-background="#AAB5C2">
+  <h2>Third-Party Software</h2>
+
+  <table>
+    <tr>
+      <th>
+        <a href="https://unity3d.com/">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/1200px-Unity_Technologies_logo.svg.png" alt="unity" style="width:150px;height:54.5px;">
+        </a>
+      </th>
+      <th>
+        <a href="https://nodejs.org/">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="node" style="width:150px;height:81px;">
+        </a>
+      </th>
+      <th>
+        <a href="https://loopback.io/">
+          <img src="https://cdn.worldvectorlogo.com/logos/loopback.svg" alt="loopback" style="width:150px;height:81px;">
+        </a>
+      </th>
+      <th>
+        <a href="https://socket.io/">
+          <img src="https://devstickers.com/assets/img/pro/rd5f.png" alt="socket.io" style="width:100px;height:100px;">
+        </a>
+      </th>
+      <th>
+        <a href="https://www.mysql.com/">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/mysql-logo-png-transparent.png" alt="MySQL" style="height:100px;">
+        </a>
+      </th>
+    </tr>
+  </table>
+</section>
+</section>
+
+<section id="chapter-instalacion" class="chapter">
+<section id="instalacion-instalacion" class="slide" data-has-notes="false">
+<h2>Instalación del Cliente</h2>
+
+<p>El videojuego está disponible para instalarse en distintos sistemas operativos desde la página de <a href="https://github.com/Manolomon/Space-Checkers/releases">Releases en Github</a></p>
+
+<table>
+  <tr>
+    <th align="center">
+      <img src="https://img.shields.io/badge/Available%20on-Mac%20OS%20X-white.svg?logo=apple&logoColor=white&colorB=999999&style=for-the-badge" alt="Mac">
+    </th>
+    <th align="center">
+      <img src="https://img.shields.io/badge/Available%20on-Windows-white.svg?logo=windows&logoColor=white&colorB=0078D6&style=for-the-badge" alt="Windows">
+    </th>
+  </tr>
+  <tr>
+    <td>Para la versión de Mac se incluye el binario de la aplicación <code>.app</code></td>
+    <td>Se incluye el instalador con extensión <code>.exe</code> para arquitectura x86_64</td>
+  </tr>
+</table>
+</section>
+
+<section id="instalacion-enviroment" class="slide" data-has-notes="false">
+<h2>Entorno del Servidor</h2><p>Inicialmente, instalar los módulos necesarios para el Servidor desde la raíz</p>
+<pre><code class="lang-console">npm install
+</code></pre>
+<p>Posteriormente cargar al script de generación de la Base de Datos en MySQL</p>
+<pre><code class="lang-sql">SOURCE database.sql;
+</code></pre>
+</section>
+
+<section id="instalacion-servidor" class="slide" data-has-notes="false">
+<h2>Instalación del Servidor</h2><p>Para iniciar el servidor se ejecuta el comando</p>
+<pre><code class="lang-console">node .
+</code></pre>
+<p>En la consola se puede visualizar un log de los eventos</p>
+<pre><code class="lang-console"><span class="hljs-meta">&gt;</span><span class="bash"> node .</span>
+socket.io escuchando en 5000
+Servidor listo...
+</code></pre>
+</section>
+</section>
+
+<section id="chapter-codigo" class="chapter">
+<section id="codigo-cliente" class="slide" data-has-notes="false">
+<h2>Código del Cliente</h2><p>Las clases encontradas en la carpeta <code>Scripts</code> del proyecto de Unity están programadas según el <a href="https://github.com/Manolomon/Space-Checkers/wiki/Est%C3%A1ndar-de-codificaci%C3%B3n">estándar establecido</a>, documentando de la siguiente forma:</p>
+<pre><code class="lang-csharp"><span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;summary&gt;</span>Evento en caso de que el mouse haga hover sobre el botón<span class="hljs-doctag">&lt;/summary&gt;</span></span>
+<span class="hljs-comment"><span class="hljs-doctag">///</span> <span class="hljs-doctag">&lt;param name="eventData"&gt;</span>Información del evento de mouse<span class="hljs-doctag">&lt;/param&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnPointerEnter</span>(<span class="hljs-params">PointerEventData eventData</span>)</span>
+{    
+    inBounds = <span class="hljs-literal">true</span>;
+}
+</code></pre>
+</section>
+
+<section id="codigo-servidor" class="slide" data-has-notes="false">
+<h2>Código Servidor</h2><p>Se siguió el mismo criterio para la programación en Java Script del servidor, documentando de la siguiente forma:</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Evento llamado por cliente al hacer un movimiento en su turno correspondiente</span>
+cliente.on(<span class="hljs-string">"moverPieza"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">datos</span>) </span>{
+  <span class="hljs-keyword">var</span> movimiento = <span class="hljs-built_in">JSON</span>.parse(datos);
+  <span class="hljs-keyword">var</span> stringmovimiento = <span class="hljs-built_in">JSON</span>.stringify(movimiento);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Movimiento pieza "</span>+ movimiento[<span class="hljs-string">'Ficha'</span>] + <span class="hljs-string">" a la casilla "</span> + movimiento[<span class="hljs-string">'Casilla'</span>] + <span class="hljs-string">" en el lobby "</span> + movimiento[<span class="hljs-string">'Lobby'</span>]);
+  io.sockets.in(movimiento[<span class="hljs-string">'Lobby'</span>]).emit(<span class="hljs-string">"moverPiezaCliente"</span>, stringmovimiento); <span class="hljs-comment">//codigo del lobby</span>
+});
+</code></pre>
+</section>
+</section>
+
+<section id="red" class="slide" data-has-notes="false">
+<h2>Configuración de Red</h2><p><sub>En caso de configurar el cliente para jugar en entorno de red, es necesario especificar la dirección y el puerto para conectar en el archivo <code>config.json</code> ubicado en <code>client/Assets/StreamingAssets/Config</code></sub></p>
+<pre><code class="lang-json">{<span class="hljs-attr">"items"</span>:
+    [
+        {<span class="hljs-attr">"key"</span>:<span class="hljs-string">"address"</span>,<span class="hljs-attr">"value"</span>:<span class="hljs-string">"localhost:5000"</span>}
+    ]
+}
+</code></pre>
+</section>
+
+<section id="final" class="slide" data-has-notes="false">
+<section data-background="images/Background.jpg">
+
+  <h2>¡Conquista la Galaxia!</h2>
+
+  <img src="images/home.gif" alt="Home">
+
+  <small>🌌 Reta a tus enemigos y vuelvete el líder de la Galaxia 🌌</small>
+
+</section>
+</section></div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: Reveal.getQueryHash().transition || 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+        //{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+      ]
+    });
+    </script>
+
+    <!-- INCLUDE JS HERE -->
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+/* custom styles can go here */
+
+@font-face {
+	font-family: "Lazer84";
+	src: url("fonts/Lazer84.ttf") format("truetype");
+}
+
+h2.customfont {
+	font-family: "Lazer84";
+}
+
+#chapter-foo p {
+	text-transform: uppercase;
+}
