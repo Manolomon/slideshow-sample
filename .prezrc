@@ -1,0 +1,11 @@
+{
+    "title": "Space Checkers",
+    "author": "Manolomon",
+    "description": "Videojuego multijugador de Damas Chinas, creado para la Experiencia Educativa de Tecnologías para la Construcción de Software",
+    "slides": "slides",
+    "print": false,
+    "printTheme": "space",
+    "theme": "space",
+    "highlightTheme": "space",
+    "suchNotes": true
+}
